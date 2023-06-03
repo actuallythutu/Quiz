@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Questões</title>
+        <link rel="stylesheet" href="est.css">
+        <script language="Javascript" src="java.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body class="teste pocket" onLoad="id()">
+        <div>
+            <form name="formulario" class="form-group custom-control custom-radio">
+                <div class="dados">
+                    <label>Nome:</label>    
+                        <input type="text" class="form-control" name="txtnome">
+                    <label>Email:</label>   
+                        <input type="email" class="form-control" name="txtmail">
+                    <label>Acertos:</label> 
+                        <input type="text" class="form-control" name="txtcertos">
+                    <label>Erros:</label> 
+                        <input type="text"  class="form-control"name="txterros">
+                    <input id="botaoen" class="btn btn-primary btn-sm" type="button" name="BTENVIAR"  value="Enviar" onclick="Enviar()"><hr>
+                </div> 
+                <font face="Arial"><h2>Com base nos textos lidos, responda as questões abaixo:</h2><hr></font>
+
+                1) Em que ano foi assinado o Tratado de Madrid?<br>
+                <input type="radio" name="op1" onclick="verifica1(1)" value="A">1750.<br>
+                <input type="radio" name="op2" onclick="verifica1(0)" value="B">1960.<br>
+                <input type="radio" name="op3" onclick="verifica1(0)" value="C">1860.<br>
+                <input type="radio" name="op4" onclick="verifica1(0)" value="D">1330.<hr>
+
+                2) Quais países (reinos) participaram do Tratado de Madrid?<br>
+                <input type="radio" name="op5" onclick="verifica2(0)" value="A">Espanha e Alemanha.<br>
+                <input type="radio" name="op6" onclick="verifica2(0)" value="B">Rússia e EUA.<br>
+                <input type="radio" name="op7" onclick="verifica2(1)" value="C">Espanha e Portugal.<br>
+                <input type="radio" name="op8" onclick="verifica2(0)" value="D">Índia e China.<hr>
+
+                3) Em que lugar foi assinado o Tratado de Madrid?<br>
+                <input type="radio" name="op9" onclick="verifica3(0)" value="A">Paris, França.<br>
+                <input type="radio" name="op10" onclick="verifica3(0)" value="B">Brasília, Brasil.<br>
+                <input type="radio" name="op11" onclick="verifica3(0)" value="C">Frankfurt, Alemanha.<br>
+                <input type="radio" name="op12" onclick="verifica3(1)" value="D">Madrid, Espanha.<hr>
+
+                4) Em que ano foi assinado o Pacto de Varsóvia?<br>
+                <input type="radio" name="op13" onclick="verifica4(1)" value="A">1955.<br>
+                <input type="radio" name="op14" onclick="verifica4(0)" value="B">1755.<br>
+                <input type="radio" name="op15" onclick="verifica4(0)" value="C">2055.<br>
+                <input type="radio" name="op16" onclick="verifica4(0)" value="D">1999.<hr>
+
+                5) Quais países participam do Pacto de Varsóvia?<br>
+                <input type="radio" name="op17" onclick="verifica5(1)" value="A">Albania, Bulgária, Checoslováquia, Hungria, Polônia, Romenia, União Soviética e o Leste da Alemanha.<br>
+                <input type="radio" name="op18" onclick="verifica5(0)" value="B">Estados Unidos e União Soviética.<br>
+                <input type="radio" name="op19" onclick="verifica5(0)" value="C">Portugal e Espanha.<br>
+                <input type="radio" name="op20" onclick="verifica5(0)" value="D">Alemanha e Eslováquia.<hr>
+
+                6) Onde o Pacto de Varsóvia foi assinado?<br>
+                <input type="radio" name="op21" onclick="verifica6(0)" value="A">Varsóvia, Checoslováquia.<br>
+                <input type="radio" name="op22" onclick="verifica6(1)" value="B">Varsóvia, Polônia.<br>
+                <input type="radio" name="op23" onclick="verifica6(0)" value="C">Varsóvia, Romenia.<br>
+                <input type="radio" name="op24" onclick="verifica6(0)" value="D">Pruszków, Polônia.<hr>
+
+                7) Em que ano o BRICS foi fundado?<br>
+                <input type="radio" name="op25" onclick="verifica7(0)" value="A">2010.<br>
+                <input type="radio" name="op26" onclick="verifica7(0)" value="B">2005.<br>
+                <input type="radio" name="op27" onclick="verifica7(1)" value="C">2006.<br>
+                <input type="radio" name="op28" onclick="verifica7(0)" value="D">2000.<hr>
+
+                8) O BRICS é composto por quais países?<br>
+                <input type="radio" name="op29" onclick="verifica8(0)" value="A">Bolívia, Rússia, Índia, China e África do Sul.<br>
+                <input type="radio" name="op30" onclick="verifica8(0)" value="B">Brasil, Romênia, Itália, China e África do Sul.<br>
+                <input type="radio" name="op31" onclick="verifica8(0)" value="C">Bolívia, Rússia, China, Índia e África do Sul.<br>
+                <input type="radio" name="op32" onclick="verifica8(1)" value="D">Brasil, Rússia, Índia, China e África do Sul.<hr>
+
+                9) O BRICS possuí cunho;<br>
+                <input type="radio" name="op33" onclick="verifica9(0)" value="A">Social.<br>
+                <input type="radio" name="op34" onclick="verifica9(0)" value="B">Agícola.<br>
+                <input type="radio" name="op35" onclick="verifica9(1)" value="C">Econômico.<br>
+                <input type="radio" name="op36" onclick="verifica9(0)" value="D">Acrônomo.<hr>
+
+                10) Qual a principal pauta do BRICS?<br>
+                <input type="radio" name="op37" onclick="verifica10(0)" value="A">Desenvolviento Sustentável.<br>
+                <input type="radio" name="op38" onclick="verifica10(1)" value="B">Desenvolvimento dos países emergêntes.<br>
+                <input type="radio" name="op39" onclick="verifica10(0)" value="C">Desenvolvimento Social.<br>
+                <input type="radio" name="op40" onclick="verifica10(0)" value="D">Desenvolvimento Indústrial.<hr>
+
+            </form>
+        </div>
+    </body>
+</html>

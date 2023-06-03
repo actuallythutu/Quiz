@@ -1,0 +1,80 @@
+.texto {
+    text-align: justify;
+    width: 10000px;
+    height: 750px;
+    margin:0 auto;
+    border-radius: 10px;
+    opacity : 0.90;
+ }
+
+.painel {
+    background: #ffffff;
+    width: 900px;
+    padding: 20px;
+    margin:0 auto;
+}
+
+.teste {
+    text-align: justify;
+    width: 10000px;
+    height: 1400px;
+    margin:0 auto;
+    border-radius: 10px;
+    opacity : 0.90;
+ }
+ .pocket {
+    background: 	#ffffff;
+    width: 100%;
+    padding: 20px;
+    margin:0 auto;
+}
+
+body {
+    background-color:#ffffff;
+}
+
+a {
+    position: absolute;
+    display: flex;
+    width: 32%;
+    flex-direction: row;
+    justify-content: center;
+    left: 35%;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.fund {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fund p{
+    padding: 4px;
+}
+
+h3 {
+text-align: center;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 10px;
+}
+
+.dados input{
+   margin: 5px;
+}
+
+#botaoen {
+    margin-top: 22px;
+}
+
+.container {
+    
+}
